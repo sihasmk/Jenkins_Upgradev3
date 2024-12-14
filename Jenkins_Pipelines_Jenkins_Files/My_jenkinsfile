@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         // Define environment variables here
-        MY_ENV_VAR = 'Custom Value'
+        MY_ENV_VAR = 'Sihas Kumarasingha'
     }
 
     stages {
@@ -11,7 +11,7 @@ pipeline {
             steps {
                 script {
                     // Clone the Git repository's master branch
-                    def gitRepoUrl = 'https://github.com/anshulc55/Jenkins_Upgradev3.git'
+                    def gitRepoUrl = 'https://github.com/sihasmk/Jenkins_Upgradev3.git'
 
                     checkout([$class: 'GitSCM', 
                         branches: [[name: '*/master']], 
